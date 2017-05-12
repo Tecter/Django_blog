@@ -1,0 +1,9 @@
+{% for blog in blogs %}
+
+	<div class="container">
+		<div class="title">
+			<a href="{% url 'blog_get_detail' blog.id %} "><h2>{{ blog.title }}</h2></a>
+		</div>
+
+	</div>
+{% endfor %}
