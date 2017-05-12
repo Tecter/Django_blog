@@ -1,2 +1,2 @@
-# Django_study
-Django is new for me, I will often practice django in this.
+# Django 博客的编写
+接触Django没多久，尝试写一个简单的博客
