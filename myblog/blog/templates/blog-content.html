@@ -1,0 +1,23 @@
+<form action="{% url 'blog_get_content' blog.id %}" method="POST">
+<title>测试网页</title>
+<div class="topic" style="color:blue">
+	<h1>{{ blog }}</h1>
+	<div class="author" style="color:red;font-size:1">
+		<h2>作者:{{ author }}</h2>
+	</div>
+
+</div><br/>
+{{ content }}
+
+<div class="time" style="color:gray">
+	<br/><br/><br/><br/><br/><br/><br/>
+	发布时间:{{ created }}
+	<br/>
+	更新时间:{{ update }}
+</div>
+<a href="/detail/{{ blog.id }}">评论</a>
+</form>
+<style type="text/css">
+ body{background:skyblue}
+ </style>
+ <body></body>

@@ -1,0 +1,15 @@
+
+<div class="topic" style="color:red;font-size:30;margin:0 150 10 100">我的主页</div>
+{% for blog in blogs %}
+
+	<div class="container">
+		<div class="title" style="font-size:10;text-align:center">
+			<a href="{% url 'blog_get_content' blog.id %} "><h2>{{ blog.title }}</h2></a>
+		</div>
+
+	</div>
+{% endfor %}
+<style type="text/css">
+	body{background:skyblue}
+</style>
+<body></body>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ 
+ <title>用户登录</title>
+</head>
+<style type="text/css">
+ body{background:skyblue}
+ </style>
+<body>
+<div align="center" style="color:red">
+	<h1>登录页面</h1>
+</div>
+<div align="center" style="color:gray">现在时间:{{ curtime }}</div>
+<div>
+	<br/>
+</div>
+{% csrf_token %}
+{% for field in form %}
+   <div align="center" style="color:blue">      
+   		{{ field.label }}:{{ field }}
+   </div>
+
+   <div class="error" style="color:red">
+   		{{ field.errors }}
+   </div>
+
+{% endfor %}
+<br/><br/><div align="center"><input type="submit" value = "登录" ></div>
+</div>
+</body>
+</html>
+
+
